@@ -52,11 +52,17 @@ sops --decrypt secrets/database/postgres.enc.yaml
 
 practice5-sops-demo/
 ├── .sops.yaml # Конфигурация SOPS
+
 ├── .gitignore # Игнорирование приватных ключей
+
 ├── public_keys/ # Публичные ключи команды
+
 │ └── developer1.pub
+
 └── secrets/ # Зашифрованные секреты
+
 └── database/
+
 └── postgres.enc.yaml
 
 ### Проверка установки Age и SOPS
