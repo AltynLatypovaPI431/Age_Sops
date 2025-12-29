@@ -20,6 +20,8 @@ creation_rules:
   - path_regex: 'secrets/database/.*\.enc\.yaml$'
     age: 'age1XXXXXXXXXXXXXX'
 
+sops_version: 3.8.1
+
 ## Процесс шифрования
 Генерация ключей Age:
 ```
