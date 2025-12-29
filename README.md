@@ -43,11 +43,6 @@ sops --encrypt secrets/database/postgres.yaml > secrets/database/postgres.enc.ya
 sops --decrypt secrets/database/postgres.enc.yaml
 ```
 
-## Безопасность
--  Приватные ключи НЕ хранятся в Git
--  В репозитории только зашифрованные файлы
--  Используется .gitignore для защиты ключей
-
 ## Структура проекта
 
 ```text
