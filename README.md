@@ -49,22 +49,18 @@ sops --decrypt secrets/database/postgres.enc.yaml
 -  Используется .gitignore для защиты ключей
 
 ## Структура проекта
-
-practice5-sops-demo/
-├── .sops.yaml # Конфигурация SOPS
-
-├── .gitignore # Игнорирование приватных ключей
-
-├── public_keys/ # Публичные ключи команды
-
-│ └── developer1.pub
-
-└── secrets/ # Зашифрованные секреты
-
-└── database/
-
-└── postgres.enc.yaml
-
+.
+├── .git
+├── .gitignore
+├── .sops.yaml
+├── keys.txt
+├── public_keys
+│   └── developer1.pub
+└── secrets
+    └── database
+        ├── postgres.enc.yaml
+        └── postgres.yaml
+        
 ### Проверка установки Age и SOPS
 
 <img width="366" height="82" alt="image" src="https://github.com/user-attachments/assets/f7988ca6-5da6-45b5-aee6-c8ec5d5032f2" />
